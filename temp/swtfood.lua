@@ -13,15 +13,18 @@ local swtfood = {
 		sanity = TUNING.SANITY_TINY,
 		cooktime = 2,
 		tags = {"catfood"}
-	},	
-	
+	},
+
 	creamcake = {
 		test = function (cooker,names,tags) return tags.dairy and tags.frozen and tags.
 }
 	sdhs={dsd
-	},	
+	},
 }
 
+
+
+return swtfood
 for k,recipe in pairs(foods) do
 	recipe.name = k
 	recipe.weight = recipe.weight or 1
@@ -29,6 +32,6 @@ for k,recipe in pairs(foods) do
 	AddCookerRecipe("cookpot", recipe)
 end
 
-
+--[[
 RECIPE("xxxx",xxxx,swtfoodfun)
-...
+...]]
